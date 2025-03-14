@@ -10,6 +10,15 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ .img-shadow {box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  
+  
+}
+
+ .custom-modal-width {
+  max-width: 50% !important; 
+  width: 50% !important;
+}
 :root {
   --bs-blue: #1e30f3;
   --bs-indigo: #6610f2;
@@ -8130,7 +8139,11 @@ textarea.form-control-lg {
 }
 
 .fw-bolder {
-  te
+  font-weight: bolder !important;
+}
+
+.fw-bolder2 {
+  color:#12A74C;
   font-weight: bolder !important;
 }
 
