@@ -8138,8 +8138,13 @@ textarea.form-control-lg {
   font-weight: 600 !important;
 }
 
+.text-shadow {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* sombra con desplazamiento y opacidad */
+}
+
 .fw-bolder {
   font-weight: bolder !important;
+  text-shadow: #000;
 }
 
 .fw-bolder2 {
