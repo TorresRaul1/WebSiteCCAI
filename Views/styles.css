@@ -634,6 +634,10 @@ progress {
   color: #6c757d;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .container,
 .container-fluid,
 .container-xxl,
@@ -643,11 +647,21 @@ progress {
 .container-sm {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
-  width: 100%;
+  width: auto;
+  max-width: 1200px; 
   padding-right: calc(var(--bs-gutter-x) * 0.5);
   padding-left: calc(var(--bs-gutter-x) * 0.5);
   margin-right: auto;
   margin-left: auto;
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .conteiner {
+      flex-direction: column; /* Se apila en pantallas pequeñas */
+  }
 }
 
 @media (min-width: 576px) {
