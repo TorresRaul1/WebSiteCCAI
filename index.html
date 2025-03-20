@@ -22,7 +22,10 @@
             <!-- Navigation-->
             <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
                 <div class="container px-4">
-                    <a class="navbar-brand" href="index.html"><span class="fw-bolder text-primary">Centro de Cooperación Academia Industria (CCAI)</span></a>
+                    <a class="navbar-brand" href="index.html">
+                        <span class="fw-bolder text-primary nombre-completo">Centro de Cooperación Academia Industria (CCAI)</span>
+                        <span class="fw-bolder text-primary nombre-corto" style="display: none;">CCAI</span>
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
@@ -49,23 +52,22 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xxl-7">
-                            <!-- Header profile picture-->
+                        <div class="col-xxl-7 position-relative">
+                            <!-- Header profile picture -->
                             <div class="d-flex justify-content-center mt-5 mt-xxl-0">
+                                <div class="dots-2 position-relative">
+                                    <img src="Views/img/Union.png" alt="Perfil" class="union-img">
+                                </div>
                                 <div class="profile">
                                     <img src="Views/img/Ellipse 1.png" alt="Perfil" style="width:100%; height:auto;">
-                                    <!-- TIP: For best results, use a photo with a transparent background like the demo example below-->
-                                    <!-- Watch a tutorial on how to do this on YouTube (link)-->
-                                    <div class="dots-2 col-xxl-3">
-                                        <!-- SVG Dots-->
-                                        <img src="Views/img/Union.png" alt="Perfil" style="position: relative; left: -70px;">
-                                        <!-- END of SVG dots-->
-                                    </div>
-                                    <img class="profile-img" src="Views/img/image 6.png" alt="..." />
-                                    </div>
+                                    <img class="profile-img" src="Views/img/image 6.png" alt="...">
                                 </div>
+                                <!-- Movemos Union.png afuera de .profile -->
+                                
                             </div>
                         </div>
+                        
+                        
                     </div>
                 </div>
 
@@ -73,10 +75,11 @@
             
         </main>
         <!-- Footer-->
+        <div class="contenedor-union">
+            <img src="Views/img/Union 2.png" alt="Perfil" class="contenedor-img">
+        </div>
+
         <footer class="bg-white py-4 mt-auto">
-            <div class="contenedor-imagen">
-                <img src="Views/img/Union 2.png" alt="Perfil">
-            </div>
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                     <div class="col-auto"><div class="small m-0 px-5">© 2025 Centro de Cooperación Academia Industria (CCAI). Todos los derechos reservados. | Términos y Condiciones | Política de Privacidad | Contacto</div></div>

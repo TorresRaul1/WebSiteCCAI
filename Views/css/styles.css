@@ -11588,6 +11588,12 @@ html {
   max-height: 40rem;
   max-width: 40rem;
 }
+
+.profile .union-img {
+  width: 100%;  /* Se adapta al tamaño del contenedor .dots-2 */
+  height: 80vw
+}
+
 .profile .profile-img {
   height: 80vw;
   max-height: 45rem;
@@ -11607,9 +11613,10 @@ html {
 }
 .profile .dots-2 {
   position: absolute;
-  width: 3vw;
-  right: -4vw;
-  top: 6.05vw;
+  width: 10vw;  /* Ajusta el tamaño */
+  max-width: 400px; /* Evita que crezca demasiado */
+  right: -4vw;  /* Ajusta para que no se salga */
+  top: 4vw;
 }
 .profile .dots-2 svg {
   fill: #1e30f3;
@@ -11641,13 +11648,17 @@ html {
   .profile .profile-img {
     height: 65vw;
   }
+  .profile .union-img{
+    height: 55vw;
+  }
+  
   .profile .dots-1 {
     width: 3vw;
     right: 1.5vw;
   }
   .profile .dots-2 {
     width: 3vw;
-    right: -4vw;
+    right: -7vw;
   }
   .profile .dots-3 {
     width: 3vw;
@@ -11672,7 +11683,7 @@ html {
   }
   .profile .dots-2 {
     width: 3vw;
-    right: -4vw;
+    right: -7vw;
   }
   .profile .dots-3 {
     width: 3vw;
@@ -11697,7 +11708,7 @@ html {
   }
   .profile .dots-2 {
     width: 1.5vw;
-    right: -2vw;
+    right: -5vw;
   }
   .profile .dots-3 {
     width: 1.5vw;
@@ -11722,7 +11733,7 @@ html {
   }
   .profile .dots-2 {
     width: 1.5vw;
-    right: -2vw;
+    right: -4vw;
   }
   .profile .dots-3 {
     width: 1.5vw;
@@ -11739,6 +11750,8 @@ footer {
   min-height: 60px; /* Asegura que el footer sea visible */
   width: 100%; /* Que ocupe todo el ancho */
   padding: 20px 0;
+  position: relative; /* Asegura que el footer se posicione correctamente */
+  z-index: 1; /* Asegurarse de que el footer esté por debajo de la imagen */
 }
 
 
@@ -11752,15 +11765,193 @@ footer .small.stroke {
   -webkit-text-stroke: 1px #555; /* Borde en el texto */
 }
 
-.contenedor-imagen {
-  position: fixed; /* Se mantiene en la pantalla */
-  bottom: 63px; /* Ajusta la altura */
-  left: 88%; /* Ajusta la posición */
-  z-index: 10; /* Asegura que se vea */
+.contenedor-union {
+  display: flex;
+  justify-content: flex-end; /* Alinea la imagen a la derecha */
+  align-items: flex-end; /* Asegura que la imagen se mantenga en la parte inferior */
+  width: 100%;
+  overflow: hidden; /* Para evitar desbordes de la imagen */
 }
 
 
-.contenedor-imagen img {
-  width: 150px; /* Ajusta el tamaño de la imagen */
+
+.contenedor-img {
+  position: absolute;
+  bottom: 0; /* Pegada al footer */
+  right: 0; /* Alineada a la derecha */
+  width: 60vw; /* Se adapta al 60% del ancho de la pantalla */
+  max-width: 400px; /* Máximo tamaño para pantallas grandes */
+  height: auto;
+  z-index: 10; /* Se asegura de que esté por encima del footer */
+  margin-bottom: 0; /* Ajusta este valor para mover la imagen hacia arriba */
+}
+
+@media (min-width: 375px) and (max-width: 427px) {
+  .contenedor-img {
+    width: min(22vw, 120px); /* Ajuste adaptable con límite */
+    bottom: clamp(-75vh, -62.5vh, -50vh); /* Ajusta en función de la altura con mejor estabilidad */
+    right: 0; /* Asegura que esté alineado a la derecha */
+    position: absolute; /* Evita que mueva el footer */
+  }
+}
+
+
+@media (min-width: 310px) and (max-width: 389px) {
+  .contenedor-img {
+    display: none;
+    width: 20vw; 
+    bottom:-26vh; 
+  }
+}
+
+@media (min-width: 390px) and (max-width: 427px) {
+  .contenedor-img {
+    display: none;
+    width: 20vw; 
+    bottom:-26vh; 
+  }
+}
+
+@media (min-width: 428px) and (max-width: 575px) {
+  .contenedor-img {
+    display: none;
+    width: 20vw; 
+    bottom:-19vh; 
+  }
+}
+
+@media (min-width: 576px) {
+  .contenedor-img {
+    display: block;
+    width: 65vw;
+    bottom: 10vh; 
+  }
+}
+
+@media (min-width: 768px) and (max-width: 809px) {
+  .contenedor-img {
+    display: none;
+    width: 20vw;
+    bottom: 8vh; 
+  }
+}
+
+@media (min-width: 810px) and (max-width: 991px) {
+  .contenedor-img {
+    display: none;
+    width: 14vw; 
+    bottom: 1.9vh; 
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contenedor-img {
+    display: block;
+    width: 13vw; 
+    bottom: 5vh; 
+  }
+}
+
+@media (min-width: 1200px) {
+  .contenedor-img {
+    display: block;
+    width: 10vw; 
+    bottom: 7vh;
+  }
+}
+
+@media (min-width: 1900px) {
+  .contenedor-img {
+    display: block;
+    width: 13vw; 
+    bottom: 5.3vh; 
+  }
+}
+
+
+.union-img {
+  width: 100%;
   height: auto;
 }
+
+.dots-2 {
+  position: absolute;
+  width: 15vw; /* Ajuste inicial */
+  max-width: 300px; /* Evita que crezca demasiado */
+  right: 2vw; /* Mueve más hacia la derecha */
+  top: 5vw; /* Ajuste en altura */
+  
+}
+
+/* Ajustes responsivos */
+@media (min-width: 360px) {
+  .dots-2 {
+    display: none; /* Oculta la imagen para pantallas de 428px o menos */
+  }
+}
+
+@media (min-width: 576px) {
+  .dots-2 {
+    display: block;
+    width: 19vw;
+    right: 6vw;
+    top: 12vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .dots-2 {
+    display: block;
+    width: 17vw;
+    right: -61.3vw;
+    top: 10vw;
+  }
+}
+
+@media (min-width: 992px) {
+  .dots-2 {
+    display: block;
+    width: 10vw;
+    right: 6vw;
+    top: 8vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .dots-2 {
+    display: block;
+    width: 10vw;
+    right: -43vw;
+    top: 8vw;
+  }
+}
+
+@media (min-width: 1900px) {
+  .dots-2 {
+    display: block;
+    width: 11vw;
+    right: -35vw;
+    top: 11vw;
+  }
+}
+
+/* Versión completa para pantallas grandes */
+.nombre-completo {
+  display: inline;
+}
+
+.nombre-corto {
+  display: none;
+}
+
+/* En pantallas menores a 768px, mostrar "CCAI" y ocultar el nombre largo */
+@media (max-width: 768px) {
+  .nombre-completo {
+    display: none !important;  /* Asegura que se oculte */
+  }
+  .nombre-corto {
+    display: inline !important;  /* Asegura que se muestre */
+  }
+}
+
+
