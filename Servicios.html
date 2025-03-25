@@ -23,18 +23,19 @@
 
     
 </head>
-
 <body class="d-flex flex-column h-100 w-100 bg-light">
     <main class="flex-grow-1">
         <!-- Navegacion-->
         <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
             <div class="container px-5">
-                <a class="navbar-brand" href="index.html"><span class="text-shadow text-gradient d-inline">Centro de Cooperacion
-                        Academia Industria (CCAI)</span></a>
+                <a class="navbar-brand" href="index.html">
+                    <span class="fw-bolder text-primary nombre-completo text-shadow text-gradient">Centro de Cooperación Academia Industria (CCAI)</span>
+                    <span class="fw-bolder text-primary nombre-corto text-shadow text-gradient" style="display: none;">CCAI</span>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation"><span
-                        class="navbar-toggler-icon"></span></button>
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                         <li class="nav-item"><a class="nav-link" href="Inicio.html">Inicio</a></li>
@@ -113,6 +114,7 @@
                                     <div class="col-md-6 col-12 px-3">
                                         <img class="img-fluid" src="Views/Img/image 3.png" alt="..." />
                                     </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -124,68 +126,66 @@
             </div>
             <!-- Modal 1 -->
             <div class="modal fade" id="servicesModal" tabindex="-1" aria-labelledby="servicesModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
+                <div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-sm-down">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <div class="text-center w-100">
-                                <h3 class="fw-bolder mb-0 text-success text-gradient d-inline text-shadow">Descubre nuestros servicios</h3>
-                            </div>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                                <h3 class=" modal-title fw-bolder mb-0 text-success text-gradient d-inline text-shadow" id="servicesModalLabel">Descubre nuestros servicios</h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                         </div>
                         <div class="modal-body">
-                        <!-- Proyecto modal 1-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="row align-items-center">
-                                    <div class="col-md-6 col-12 p-5">
-                                        <h3 class="fw-bolder2 text-shadow">Automatización y Control de Procesos</h3>
-                                        <ul>
-                                            <li>Sistemas SCADA y PLC para la industria.</li>
-                                            <li>Desarrollo de software para robots y automatización. </li>    
-                                            <li>Simulación y optimización de procesos industriales.</li>
-                                        </ul> 
-                                    </div>   
-                                    <div class="col-md-6 col-12">
-                                        <img class="rounded-1 img-fluid" src="Views/Img/image 4.jpg" alt="Automatización" style="height: auto;">
+                            <!-- Proyecto modal 1-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-6 col-12 px-3 py-3">
+                                            <h3 class="fw-bolder2 text-shadow">Automatización y Control de Procesos</h3>
+                                            <ul>
+                                                <li>Sistemas SCADA y PLC para la industria.</li>
+                                                <li>Desarrollo de software para robots y automatización. </li>    
+                                                <li>Simulación y optimización de procesos industriales.</li>
+                                            </ul> 
+                                        </div>   
+                                        <div class="col-md-6 col-12 px-3">
+                                            <img class="rounded-1 img-fluid" src="Views/Img/image 4.jpg" alt="Automatización">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- Proyecto modal 2-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
-                                <div class="row align-items-center">
-                                    <div class="col-md-6 col-12 p-5">
-                                        <h3 class="fw-bolder2 text-shadow">Ciberseguridad y Protección de Datos</h3>
-                                        <ul>
-                                            <li> Evaluación y fortalecimiento de seguridad en sistemas informáticos.</li>
-                                            <li> Desarrollo de software de protección y encriptación de datos.</li> 
-                                            <li> Capacitación en ciberseguridad para empresas.</li>
-                                        </ul>
+                            <!-- Proyecto modal 2-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-6 col-12 px-3 py-3">
+                                            <h3 class="fw-bolder2 text-shadow">Ciberseguridad y Protección de Datos</h3>
+                                            <ul>
+                                                <li> Evaluación y fortalecimiento de seguridad en sistemas informáticos.</li>
+                                                <li> Desarrollo de software de protección y encriptación de datos.</li> 
+                                                <li> Capacitación en ciberseguridad para empresas.</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6 col-12 px-3">
+                                            <img class="img-fluid rounded-1" src="Views/Img/image 5.png" alt="Automatización" style="height: auto;">
+                                        </div>
+                                        
                                     </div>
-                                    <div class="col-md-6 col-12">
-                                        <img class="img-fluid rounded-1" src="Views/Img/image 5.png" alt="Automatización" style="height: auto;">
-                                    </div>
-                                    
                                 </div>
                             </div>
-                        </div>
-                        <!-- Proyecto modal 3-->
-                        <div class="card overflow-hidden shadow rounded-4 border-0">
-                            <div class="card-body p-0">
-                                <div class="row align-items-center">
-                                    <div class="col-md-6 col-12 p-5">
-                                        <h3 class="fw-bolder2 text-shadow">Plataformas de Formación y e-Learning</h3>
-                                        <ul>
-                                            <li> Desarrollo de plataformas educativas en línea.</li>
-                                            <li> Sistemas de gestión del aprendizaje (LMS).</li>
-                                            <li>Cursos virtuales con certificación. </li>    
-                                        </ul>
+                            <!-- Proyecto modal 3-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0">
+                                <div class="card-body p-2">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-6 col-12 px-3 py-3">
+                                            <h3 class="fw-bolder2 text-shadow">Plataformas de Formación y e-Learning</h3>
+                                            <ul>
+                                                <li> Desarrollo de plataformas educativas en línea.</li>
+                                                <li> Sistemas de gestión del aprendizaje (LMS).</li>
+                                                <li>Cursos virtuales con certificación. </li>    
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6 col-12 px-3">
+                                            <img class="img-fluid rounded-1" src="Views/Img/image 6.png" alt="Automatización" style="height: 250PX;">
+                                        </div>
                                     </div>
-                                    <div class="col-md-6 col-12">
-                                        <img class="img-fluid rounded-1" src="Views/Img/image 6.png" alt="Automatización" style="height: 250PX;">
-                                    </div>
-                                    
                                 </div>
                             </div>
                         </div>
@@ -205,24 +205,22 @@
             
             <!-- Modal 2 -->
             <div class="modal fade" id="servicesModal2" tabindex="-1" aria-labelledby="servicesModalLabel2" aria-hidden="true">
-                <div class="modal-dialog modal-lg">
+                <div class="modal-dialog modal-dialog-centered modal-lg modal-fullscreen-sm-down">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <div class="text-center w-100">
-                                <h3 class="fw-bolder mb-0 text-success text-gradient d-inline text-shadow">Nuestros Proyectos</h3>
-                            </div>
+                            <h3 class=" modal-title fw-bolder mb-0 text-success text-gradient d-inline text-shadow" id="servicesModalLabel">Nuestros Proyectos</h3>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                        </div>
+                        </div>  
                         <div class="modal-body">
                         <!-- Proyecto modal 1-->
-                        <div class="card overflow-hidden shadow-sm rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
+                        <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                            <div class="card-body p-2">
                                 <div class="row align-items-center">
-                                    <div class="col-md-6 col-12 p-5">
+                                    <div class="col-md-6 col-12 px-3 py-3">
                                         <h3 class="fw-bolder2 text-shadow">Implementación de un Centro de Información Tecnológica en Georreferencia y Analítica de Datos</h3>
                                         <p>Este proyecto ofrece servicios especializados en georreferenciación y análisis de datos, proporcionando a las empresas locales herramientas avanzadas para la toma de decisiones estratégicas. </p>
                                     </div>
-                                    <div class="col-md-6 col-12">
+                                    <div class="col-md-6 col-12 px-3">
                                         <img class="img-fluid rounded-1" src="Views/Img/image 4.jpg" alt="Automatización" style="height: auto;" >
                                     </div>
                                     
@@ -231,34 +229,32 @@
                         </div>
                         <!-- Proyecto modal 2-->
                         <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
-                            <div class="card-body p-0">
+                            <div class="card-body p-2">
                                 <div class="row align-items-center">
-                                    <div class="col-md-6 col-12 p-5">
+                                    <div class="col-md-6 col-12 px-3 py-3">
                                         <h3 class="fw-bolder2 text-shadow">Desarrollo de Prototipos mediante Manufactura Aditiva</h3>
                                         <p>Utilizando tecnologías de impresión 3D, el CCAI ha facilitado la creación de prototipos personalizados para diversas industrias, optimizando tiempos y costos en el proceso de diseño y producción.</p>
                                     </div>
-                                    <div class="col-md-6 col-12">
+                                    <div class="col-md-6 col-12 px-3">
                                        <img class="img-fluid rounded-1" src="Views/Img/image 5.png" alt="Automatización" style="height: auto;" /> 
                                     </div>
-                                    
                                 </div>
                             </div>
                         </div>
                         <!-- Proyecto modal 3-->
                         <div class="card overflow-hidden shadow rounded-4 border-0">
-                            <div class="card-body p-0">
+                            <div class="card-body p-2">
                                 <div class="row align-items-center">
-                                    <div class="col-md-6 col-12 p-5">
+                                    <div class="col-md-6 col-12 px-3 py-3">
                                         <h3 class="fw-bolder2 text-shadow">Sistema de Generación de Alertas para el Cumplimiento de la NOM-035 de la STPS</h3>
                                         <p>Se desarrolló un software que permite a las empresas evaluar y prevenir factores de riesgo psicosocial en el trabajo, promoviendo entornos organizacionales saludables y cumpliendo con la normativa vigente. </p>
                                     </div>
-                                    <div class="col-md-6 col-12">
-                                        <img class="img-fluid rounded-1" src="Views/Img/image 6.png" alt="Automatización" style="height: 300PX;"/>
+                                    <div class="col-md-6 col-12 px-3">
+                                        <img class="img-fluid rounded-1" src="Views/Img/image 6.png" alt="Automatización" style="height: auto;"/>
                                     </div>
                                     
                                 </div>
                             </div>
-                        </div>
                         </div>
                     </div>
                 </div>
@@ -315,20 +311,20 @@
                                     <div class="row row-cols-1 row-cols-md-3"></div>
                                 </div>
                                 <div class="text-center">
-                                    <a id="sendButton" class="btn btn-outline-success btn-lg px-5 py-3 fw-bolder" href="contact.html">Enviar</a>
+                                    <a id="sendButton" class="btn btn-outline-success btn-lg px-5 py-3 fw-bolder" href="#">Enviar</a>
                                 </div>
                                 <!-- Modal -->
                                 <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-sm">
+                                    <div class="modal-dialog  modal-sm modal-fullscreen-sm-down">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h3 class=" text-gradient d-inline" id="messageModalLabel">Mensaje</h3>
+                                                <h3 class="modal-title text-gradient d-inline" id="messageModalLabel">Mensaje</h3>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
                                             <div class="modal-body text-center">Mensaje enviado.</div>
-                                            <div class="modal-footer">
-                                                <button class="btn btn-outline-success btn-lg px-5 py-3 fw-bolder"data-bs-dismiss="modal" >Cerrar</button>
-                                            </div>
+                                                <div class="modal-footer">
+                                                    <button class="btn btn-outline-success" data-bs-dismiss="modal">Cerrar</button>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>

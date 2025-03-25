@@ -10,6 +10,28 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ .nombre-completo {
+  display: inline;
+}
+
+.nombre-corto {
+  display: none;
+}
+
+/* En pantallas menores a 768px, mostrar "CCAI" y ocultar el nombre largo */
+@media (max-width: 768px) {
+  .nombre-completo {
+    display: none !important;  /* Asegura que se oculte */
+  }
+  .nombre-corto {
+    display: inline !important;  /* Asegura que se muestre */
+  }
+}
+ .modal-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
  .img-shadow {box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   
   
@@ -660,7 +682,7 @@ progress {
 }
 @media (max-width: 768px) {
   .conteiner {
-      flex-direction: column; /* Se apila en pantallas pequeñas */
+    flex-direction: column; /* Se apila en pantallas pequeñas */
   }
 }
 
@@ -672,6 +694,7 @@ progress {
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
+    
   }
 }
 @media (min-width: 992px) {
