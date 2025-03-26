@@ -10,24 +10,6 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- /* Cambios Isa*/
- .nombre-completo {
-  display: inline;
-}
-
-.nombre-corto {
-  display: none;
-}
-
-/* En pantallas menores a 768px, mostrar "CCAI" y ocultar el nombre largo */
-@media (max-width: 768px) {
-  .nombre-completo {
-    display: none !important;  /* Asegura que se oculte */
-  }
-  .nombre-corto {
-    display: inline !important;  /* Asegura que se muestre */
-  }
-}
  .modal-body img {
   max-width: 100%;
   height: auto;
@@ -125,9 +107,25 @@
   font-weight: bolder !important;
 }
 .text-shadow {
+
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* sombra con desplazamiento y opacidad */
 }
 /*TERMINANLOS CAMBIOS*/
+.centered-text {
+  text-align: center;  /* Centra el texto */
+  margin-bottom: 35px ;      /* Agrega un margen superior e inferior */
+}
+.centered-text2 {
+  margin-bottom: 15px ;      /* Agrega un margen superior e inferior */
+}
+.justified-list {
+  text-align: justify;  /* Justifica el texto de la lista */
+}
+
+ul li {
+  margin-bottom: 10px;  /* Agrega espacio entre los elementos de la lista */
+}/*TERMINANLOS CAMBIOS*/
+
 :root {
   --bs-blue: #1e30f3;
   --bs-indigo: #6610f2;
@@ -249,6 +247,7 @@ h1, .h1 {
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
 }
+
 @media (min-width: 1200px) {
   h2, .h2 {
     font-size: 2rem;
