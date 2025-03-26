@@ -11861,11 +11861,27 @@ footer .small.stroke {
   }
 }
 
+@media (min-width: 1201px) and (max-width: 1300px) {
+  .contenedor-img {
+    display: block;
+    width: 13vw; 
+    bottom: -16vh; 
+  }
+}
+
 @media (min-width: 1900px) {
   .contenedor-img {
     display: block;
     width: 13vw; 
     bottom: 5.3vh; 
+  }
+}
+
+@media (min-width: 1921px) {
+  .contenedor-img {
+    display: block;
+    width: 13vw; 
+    bottom: -5.3vh; 
   }
 }
 
@@ -11931,19 +11947,22 @@ footer .small.stroke {
   .dots-2 {
     display: block;
     width: 11vw;
-    right: -35vw;
-    top: 11vw;
+    right: -37vw;
+    top: 8.7vw;
   }
 }
 
-@media (min-width: 3840px) {
+@media (min-width: 1921px) {
   .dots-2 {
     display: block;
     width: 11vw;
-    right: -35vw;
-    top: 11vw;
+    right: -27.3vw;
+    top: 8.7vw;
   }
 }
+
+
+
 
 /* Versión completa para pantallas grandes */
 .nombre-completo {
