@@ -10,24 +10,6 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- /* Cambios Isa*/
- .nombre-completo {
-  display: inline;
-}
-
-.nombre-corto {
-  display: none;
-}
-
-/* En pantallas menores a 768px, mostrar "CCAI" y ocultar el nombre largo */
-@media (max-width: 768px) {
-  .nombre-completo {
-    display: none !important;  /* Asegura que se oculte */
-  }
-  .nombre-corto {
-    display: inline !important;  /* Asegura que se muestre */
-  }
-}
  .modal-body img {
   max-width: 100%;
   height: auto;
