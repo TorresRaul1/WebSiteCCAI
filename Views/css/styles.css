@@ -106,7 +106,21 @@
   font-weight: bolder !important;
 }
 .text-shadow {
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* sombra con desplazamiento y opacidad */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* sombra con desplazamiento y opacidad */
+}
+.centered-text {
+  text-align: center;  /* Centra el texto */
+  margin-bottom: 35px ;      /* Agrega un margen superior e inferior */
+}
+.centered-text2 {
+  margin-bottom: 15px ;      /* Agrega un margen superior e inferior */
+}
+.justified-list {
+  text-align: justify;  /* Justifica el texto de la lista */
+}
+
+ul li {
+  margin-bottom: 10px;  /* Agrega espacio entre los elementos de la lista */
 }/*TERMINANLOS CAMBIOS*/
 :root {
   --bs-blue: #1e30f3;
@@ -229,6 +243,7 @@ h1, .h1 {
 h2, .h2 {
   font-size: calc(1.325rem + 0.9vw);
 }
+
 @media (min-width: 1200px) {
   h2, .h2 {
     font-size: 2rem;
