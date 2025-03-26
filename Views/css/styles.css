@@ -11602,6 +11602,7 @@ html {
   left: 50%;
   transform: translateX(-50%);
 }
+
 .profile .dots-1 {
   position: absolute;
   width: 3vw;
@@ -11645,6 +11646,7 @@ html {
     height: 60vw;
     width: 60vw;
   }
+
   .profile .profile-img {
     height: 65vw;
   }
@@ -11795,7 +11797,6 @@ footer .small.stroke {
   }
 }
 
-
 @media (min-width: 310px) and (max-width: 389px) {
   .contenedor-img {
     display: none;
@@ -11935,6 +11936,15 @@ footer .small.stroke {
   }
 }
 
+@media (min-width: 3840px) {
+  .dots-2 {
+    display: block;
+    width: 11vw;
+    right: -35vw;
+    top: 11vw;
+  }
+}
+
 /* Versión completa para pantallas grandes */
 .nombre-completo {
   display: inline;
@@ -11953,5 +11963,34 @@ footer .small.stroke {
     display: inline !important;  /* Asegura que se muestre */
   }
 }
+
+.custom-image-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra completamente la imagen */
+  margin-top: 0; /* Elimina el espacio extra */
+}
+
+.custom-image {
+  width: 100%; /* Ajuste adaptable */
+  max-width: 500px; /* Para evitar que crezca demasiado en pantallas grandes */
+  height: auto;
+  object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+@media (max-width: 768px) {
+  .custom-image {
+    max-width: 90%; /* Se hace más pequeña en pantallas medianas */
+  }
+}
+
+@media (max-width: 480px) {
+  .custom-image {
+    max-width: 80%; /* Más pequeña en pantallas pequeñas */
+  }
+}
+
+
 
 
