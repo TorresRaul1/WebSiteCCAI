@@ -10,6 +10,116 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ /* Cambios Isa*/
+ .nombre-completo {
+  display: inline;
+}
+
+.nombre-corto {
+  display: none;
+}
+
+/* En pantallas menores a 768px, mostrar "CCAI" y ocultar el nombre largo */
+@media (max-width: 768px) {
+  .nombre-completo {
+    display: none !important;  /* Asegura que se oculte */
+  }
+  .nombre-corto {
+    display: inline !important;  /* Asegura que se muestre */
+  }
+}
+ .modal-body img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+ .img-shadow {box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  
+  
+}
+
+ .custom-modal-width {
+  max-width: 50% !important; 
+  width: 50% !important;
+}
+* {
+  box-sizing: border-box;
+}
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #1EC961;
+  --bs-btn-border-color: #1EC961;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #17A750;
+  --bs-btn-hover-border-color: #117B3B;
+  --bs-btn-focus-shadow-rgb: 64, 79, 245;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #117B3B;
+  --bs-btn-active-border-color: #0B4D23;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #1EC961;
+  --bs-btn-disabled-border-color: #1EC961;
+}
+.btn-success {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #198754;
+  --bs-btn-border-color: #198754;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #157347;
+  --bs-btn-hover-border-color: #146c43;
+  --bs-btn-focus-shadow-rgb: 60, 153, 110;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #146c43;
+  --bs-btn-active-border-color: #13653f;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #198754;
+  --bs-btn-disabled-border-color: #198754;
+}
+.btn-outline-light {
+  --bs-btn-color: #117B3B;
+  --bs-btn-border-color: #117B3B;
+  --bs-btn-hover-color: #f8f9fa;
+  --bs-btn-hover-bg: #117b3b;
+  --bs-btn-hover-border-color: #f8f9fa;
+  --bs-btn-focus-shadow-rgb: 248, 249, 250;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #f8f9fa;
+  --bs-btn-active-border-color: #f8f9fa;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #f8f9fa;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #f8f9fa;
+  --bs-gradient: none;
+}
+
+.btn-outline-light2 {
+  --bs-btn-color: #f8f9fa;
+  --bs-btn-border-color: #f8f9fa;
+  --bs-btn-hover-color: #117b3b;
+  --bs-btn-hover-bg: #f8f9fa;
+  --bs-btn-hover-border-color: #f8f9fa;
+  --bs-btn-focus-shadow-rgb: 248, 249, 250;
+  --bs-btn-active-color: #000;
+  --bs-btn-active-bg: #f8f9fa;
+  --bs-btn-active-border-color: #f8f9fa;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #f8f9fa;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #f8f9fa;
+  --bs-gradient: none;
+}
+.bg-gradient-primary-to-secondary {
+  background: #117B3B;
+  background: linear-gradient(135deg, #117B3B 0%, #1EC961 100%);
+}
+.text-gradient {
+  background: -webkit-linear-gradient(315deg, #117b3b 0%, #1EC961 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}/*TERMINANLOS CAMBIOS*/
 :root {
   --bs-blue: #1e30f3;
   --bs-indigo: #6610f2;
