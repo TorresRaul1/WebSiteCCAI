@@ -118,6 +118,13 @@
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.fw-bolder2 {
+  color:#12A74C;
+  font-weight: bolder !important;
+}
+.text-shadow {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* sombra con desplazamiento y opacidad */
 }/*TERMINANLOS CAMBIOS*/
 :root {
   --bs-blue: #1e30f3;
