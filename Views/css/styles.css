@@ -113,7 +113,7 @@
   margin-bottom: 35px ;      /* Agrega un margen superior e inferior */
 }
 .centered-text2 {
-  margin-bottom: 15px ;      /* Agrega un margen superior e inferior */
+  margin-bottom: 15px 
 }
 .justified-list {
   text-align: justify;  /* Justifica el texto de la lista */
@@ -121,7 +121,51 @@
 
 ul li {
   margin-bottom: 10px;  /* Agrega espacio entre los elementos de la lista */
-}/*TERMINANLOS CAMBIOS*/
+}
+.modal.fade .modal-dialog {
+  transform: translateY(-50px);
+  transition: transform 0.3s ease-out;
+}
+.modal.show .modal-dialog {
+  transform: translateY(0);
+}
+
+@keyframes fadeInUp { /*Animacion de letras*/
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+.animated-message {
+  animation: fadeInUp 0.8s ease-out;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.animated-message:hover {
+  transform: scale(1.1); /* Aumenta el tamaño */
+  animation: fadeInOut 0.6s ease-in-out;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  transition: transform 0.5s ease-in-out;
+}
+.card:hover img {
+  transform: scale(1.1);
+}
+
+/*TERMINANLOS CAMBIOS*/
 :root {
   --bs-blue: #1e30f3;
   --bs-indigo: #6610f2;
@@ -8298,7 +8342,8 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
-  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+  color: rgba(var(--bs-primary-rgb),var(--bs-text-opacity)) !important;
+
 }
 
 .text-secondary {
