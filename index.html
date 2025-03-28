@@ -46,10 +46,39 @@
                             <div class="text-center text-xxl-start">
                                 <div class="fs-3 fw-light text-muted">Bienvenido al Centro de Academia Industria (CCAI)</div>
                                 <h1 class="display-3 fw-bolder mb-5"><span class="text-gradient d-inline">Tecnológico de Estudios Superiores de Chimalhuacán</span></h1>
+                                <!-- Botón que abre el modal -->
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
                                     <a class="btn btn-primary btn-lg px-5 py-3 me-sm-3 fs-6 fw-bolder" href="Servicios.html">Servicios</a>
-                                    <a class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" href="projects.html">¿Quienes somos?</a>
+                                    <button class="btn btn-outline-dark btn-lg px-5 py-3 fs-6 fw-bolder" data-bs-toggle="modal" data-bs-target="#quienesSomosModal">¿Quiénes somos?</button>
                                 </div>
+                                <!-- Modal ¿Quiénes somos? -->
+                                <div class="modal fade" id="quienesSomosModal" tabindex="-1" aria-labelledby="quienesSomosModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                    <!-- Parte superior: Imagen -->
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <!-- Imagen en la parte superior -->
+                                        <div class="text-center mb-4">
+                                        <img src="Views/Img/Protector de Pantalla_Mesa de trabajo 1_Mesa de trabajo 1_Mesa de trabajo 1 1.png" alt="Imagen 1" class="img-fluid rounded">
+                                        </div>
+                                        <hr>
+                                        <!-- Información debajo de la imagen -->
+                                        <div>
+                                        <h1 class="fw-bolder text-center text-shadow"><span class="text-gradient d-inline">¿Quiénes somos?</span></h1>
+                                        <p class="justified-list">
+                                            El Centro de Cooperación Academia-Industria del Tecnológico de Estudios Superiores de Chimalhuacán (TESChi) es un puente estratégico entre la educación superior y el sector productivo. Nuestro objetivo es fortalecer la vinculación entre estudiantes, docentes y empresas, promoviendo la transferencia de conocimientos, la innovación y el desarrollo tecnológico.
+                                            A través de alianzas estratégicas con la industria, impulsamos proyectos de investigación aplicada, prácticas profesionales, estancias industriales y capacitación especializada, brindando a nuestros estudiantes experiencias reales que potencien sus habilidades y preparación para el mundo laboral.
+                                            En el TESChi, creemos que la colaboración entre la academia y la industria es clave para el crecimiento económico y social, contribuyendo a la formación de profesionales altamente capacitados y a la generación de soluciones innovadoras para los desafíos del sector productivo.
+                                        </p>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                </div>
+
                             </div>
                         </div>
                         <div class="col-xxl-7 position-relative">
