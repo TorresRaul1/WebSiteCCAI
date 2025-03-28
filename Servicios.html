@@ -48,8 +48,8 @@
         </nav>
         <!-- Projects Section-->
         <section class="py-5">
-            <div>
-                <div class="text-center mb-5">
+            <div class="container shadow rounded-4" style="background-color: rgb(251, 251, 251); border: 10px ; box-shadow: 10px ;">
+                <div class="text-center mb-5 centered-text3">
                     <h1 class="display-5 fw-bolder mb-0" ><span class="text-gradient d-inline text-shadow animated-message">Servicios</span></h1>
                 </div>
                 <div class="container px-5 mb-5">
@@ -114,11 +114,11 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            
-            <!-- Botón para abrir el modal -->
-            <div class="text-center">
-                <button class="btn btn-outline-success btn-lg px-5 py-3 fw-bolder" data-bs-toggle="modal" data-bs-target="#servicesModal">Más servicios</button>
+                <!-- Botón para abrir el modal -->
+                <div class="text-center centered-text3">
+                    <button class="btn btn-outline-success btn-lg px-5 py-3 fw-bolder" data-bs-toggle="modal" data-bs-target="#servicesModal">Más servicios</button>
+                </div>
+
             </div>
             <!-- Modal 1 -->
             <div class="modal fade" id="servicesModal" tabindex="-1" aria-labelledby="servicesModalLabel" aria-hidden="true">
@@ -133,16 +133,16 @@
                             <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                                 <div class="card-body p-2">
                                     <div class="row align-items-center">
-                                        <div class="col-md-6 col-12 px-3 py-3">
-                                            <h3 class="fw-bolder2 text-shadow centered-text">Automatización y Control de Procesos</h3>
+                                        <div class="col-md-6 col-12 px-3 py-3" data-aos="fade-right" data-aos-duration="1200">
+                                            <h3 class="fw-bolder2 text-shadow centered-text " >Automatización y Control de Procesos</h3>
                                             <ul class="justified-list">
                                                 <li>Sistemas SCADA y PLC para la industria.</li>
                                                 <li>Desarrollo de software para robots y automatización. </li>    
                                                 <li>Simulación y optimización de procesos industriales.</li>
                                             </ul> 
                                         </div>   
-                                        <div class="col-md-6 col-12 px-3">
-                                            <img class="rounded-1 img-fluid" src="Views/Img/image 4.jpg" alt="Automatización">
+                                        <div class="col-md-6 col-12 px-3" data-aos="fade-left" data-aos-duration="1200">
+                                            <img class="rounded-1 img-fluid " src="Views/Img/image 4.jpg" alt="Automatización">
                                         </div>
                                     </div>
                                 </div>
@@ -319,47 +319,14 @@
                                             </div>
                                             <div class="modal-body text-center">
                                                 <i class="bi bi-check-circle text-success fs-1 animated-message"></i>
-                                                <p class="mt-2" id="animatedText"></p>
-                                            
+                                                <p class="animated-message">Hemos recibido tu solicitud, pronto nos pondremos en contacto contigo.¡Gracias por tu interés en nuestros servicios! 😊 </p>
                                                 <div class="modal-footer">
                                                     <button class="btn btn-outline-success" data-bs-dismiss="modal">Cerrar</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>          
                                 </div>
-                                <!-- Script para activar el modal -->
-                                <script>
-                                    document.addEventListener("DOMContentLoaded", function () {
-                                    const message = "Hemos recibido tu solicitud y la estamos revisando. Pronto nos pondremos en contacto contigo para brindarte más información.¡Gracias por tu interés en nuestros servicios! 😊";
-                                    
-                                    const messageElement = document.getElementById("animatedText");
-                                    let index = 0;
-
-                                    function typeWriter() {
-                                        if (index < message.length) {
-                                            messageElement.innerHTML += message.charAt(index);
-                                            index++;
-                                            setTimeout(typeWriter, 50); // Ajusta la velocidad de la escritura
-                                        }
-                                    }
-
-                                    document.getElementById("messageModal").addEventListener("shown.bs.modal", function () {
-                                        messageElement.innerHTML = ""; // Reiniciar texto
-                                        index = 0;
-                                        typeWriter();
-                                    });
-                                    });
-                                    document.getElementById('sendButton').addEventListener('click', function(event) {
-                                        event.preventDefault(); // Evita que el enlace redirija
-                                        var myModal = new bootstrap.Modal(document.getElementById('messageModal'));
-                                        myModal.show(); // Muestra el modal
-                                    });
-                                    // Aplicar el estilo para quitar el borde a los inputs
-                                    var inputs = document.querySelectorAll('input, textarea');
-                                    inputs.forEach(function(input) {
-                                        input.style.border = 'none';
-                                    });
-                                </script>
                             </div>
                         </div>
                     </div>
@@ -386,8 +353,8 @@
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <!-- Core theme JS--
+    <script src="js/scripts.js"></script>-->
     <script>AOS.init();</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="Views/js/animations.js"></script>
