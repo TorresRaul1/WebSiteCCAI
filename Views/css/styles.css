@@ -125,13 +125,22 @@
 ul li {
   margin-bottom: 10px;  /* Agrega espacio entre los elementos de la lista */
 }
+.modal-backdrop {
+  z-index: 1049 !important; /* Asegura que esté detrás del modal */
+  opacity: 0.5; /* Ajusta la transparencia del fondo */
+}
+.modal {
+  z-index: 1050 !important;
+  display: block; /* Asegura que el modal esté visible */
+  opacity: 1; /* Asegura que no tenga transparencia */
+}
 .modal.fade .modal-dialog {
   transform: translateY(-50px);
   transition: transform 0.3s ease-out;
-}
+}/*
 .modal.show .modal-dialog {
   transform: translateY(0);
-}
+}*/
 @keyframes fadeInUp { /*Animacion de letras*/
   from {
       opacity: 0;
