@@ -12183,15 +12183,15 @@ footer .small.stroke {
   object-fit: cover; /* Ajusta la imagen sin deformarla */
 }
 
-@media (max-width: 768px) {
+/*@media (max-width: 768px) {
   .custom-image {
-    max-width: 90%; /* Se hace más pequeña en pantallas medianas */
+    max-width: 90%; /* Se hace más pequeña en pantallas medianas *
   }
 }
 
 @media (max-width: 480px) {
   .custom-image {
-    max-width: 80%; /* Más pequeña en pantallas pequeñas */
+    max-width: 80%; /* Más pequeña en pantallas pequeñas *
   }
 }
 
